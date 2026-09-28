@@ -121,3 +121,4 @@ matchMedia("(prefers-color-scheme: dark)").addEventListener("change",renderTheme
 try{const t=localStorage.getItem("puig-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(_){}
 try{const s=localStorage.getItem("puig-lang");if(s&&I18N[s])lang=s;else if(/^uk/.test(navigator.language))lang="uk"}catch(_){}
 renderAll();
+Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,1000))]).then(()=>document.documentElement.classList.remove("loading"));

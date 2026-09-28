@@ -32,3 +32,7 @@ Podgląd lokalny: `python3 -m http.server` w katalogu projektu.
 - Formularz kontaktowy otwiera klienta poczty (mailto) — w produkcji potrzebny backend.
 - Katalog członków zawiera 20 firm z ogłoszeń Izby; przypisanie branż jest orientacyjne.
 - Logo jest tymczasowe.
+
+## Czcionka
+
+Manrope (SIL Open Font License 1.1, © The Manrope Project Authors) — hostowana lokalnie w `assets/fonts/` (podzbiory latin, latin-ext, cyrillic), z preloadem i dopasowanym fallbackiem, żeby polskie znaki nie „przeskakiwały” przy ładowaniu.
