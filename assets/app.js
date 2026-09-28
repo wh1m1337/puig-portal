@@ -19,7 +19,7 @@ function renderChrome(){
     <button class="theme-btn" id="themeBtn" type="button"></button>
     <a href="czlonkostwo.html" class="btn btn-gold">${T("ctaJoin")}</a></div></header>`;
   $("#ftr").innerHTML=`<footer><div class="wrap"><div class="foot">
-    <div><a class="logo" href="index.html" style="color:#fff">${LOGO}<span>PUIG<small style="color:#aebfe3">${T("orgName")}</small></span></a><p style="font-size:14px;margin-top:14px">${T("footAbout")}</p></div>
+    <div><a class="logo" href="index.html">${LOGO}<span>PUIG<small>${T("orgName")}</small></span></a><p style="font-size:14px;margin-top:14px">${T("footAbout")}</p></div>
     <div><h4>${T("fIzba")}</h4><a href="o-izbie.html">${T("fAbout")}</a><a href="o-izbie.html#kierownictwo">${T("fBoard")}</a><a href="czlonkostwo.html">${T("nMembership")}</a><a href="czlonkowie.html">${T("nMembers")}</a></div>
     <div><h4>${T("fRes")}</h4><a href="odbudowa.html">${T("fRebuild")}</a><a href="uslugi.html">${T("nServices")}</a><a href="wydarzenia.html">${T("nEvents")}</a><a href="https://pol-ukr.com/wp-content/uploads/2024-12-06-PUIG-PREZENTACJA.pdf">${T("fPres")}</a></div>
     <div><h4>${T("nContact")}</h4><a href="tel:+48228270081">+48 22 827 00 81</a><a href="mailto:info@pol-ukr.com">info@pol-ukr.com</a><a href="kontakt.html">${T("offTitle")}</a></div>
