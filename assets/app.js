@@ -27,7 +27,19 @@ function renderChrome(){
   $("#menuBtn").onclick=()=>{const n=$("#nav");n.classList.toggle("open");$("#menuBtn").setAttribute("aria-expanded",n.classList.contains("open"))};
   $("#themeBtn").onclick=()=>{const t=isDark()?"light":"dark";document.documentElement.dataset.theme=t;try{localStorage.setItem("puig-theme",t)}catch(_){}renderTheme()};
   renderTheme();
+  fitHeader();
 }
+
+/* collapse the header step by step until it fits on one row */
+function fitHeader(){
+  const h=$(".hdr");if(!h)return;
+  h.classList.remove("compact","collapsed");
+  const over=()=>h.scrollWidth>h.clientWidth+1||[...h.children].some(e=>e.offsetTop>h.firstElementChild.offsetTop+20);
+  if(over())h.classList.add("compact");
+  if(over())h.classList.add("collapsed");
+}
+let fitT;addEventListener("resize",()=>{clearTimeout(fitT);fitT=setTimeout(fitHeader,60)});
+document.fonts&&document.fonts.ready.then(fitHeader);
 
 /* theme */
 const SUN='<path d="M12 4V2M12 22v-2M4 12H2M22 12h-2M5.6 5.6 4.2 4.2M19.8 19.8l-1.4-1.4M5.6 18.4l-1.4 1.4M19.8 4.2l-1.4 1.4"/><circle cx="12" cy="12" r="4"/>',MOON='<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>';

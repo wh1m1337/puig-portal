@@ -118,7 +118,7 @@ const DEPTS={pl:["Doradztwo biznesowe","Prawo i administracja","Legalizacja poby
 const DEF_ROLE={pl:"Dyrektor / przedstawiciel PUIG",uk:"Директор / представник PUIG",en:"PUIG director / representative"};
 
 const I18N_X={
-pl:{nAbout:"O Izbie",nRebuild:"Odbudowa",nHome:"Strona główna",seeAll:"Zobacz wszystkie →",allServices:"Wszystkie usługi →",allEvents:"Cały kalendarz →",allNews:"Wszystkie aktualności →",
+pl:{nMembersShort:"Członkowie",nAbout:"O Izbie",nRebuild:"Odbudowa",nHome:"Strona główna",seeAll:"Zobacz wszystkie →",allServices:"Wszystkie usługi →",allEvents:"Cały kalendarz →",allNews:"Wszystkie aktualności →",
 aboutTitle:"Łącznik polskiego i ukraińskiego biznesu od 1992 roku",aboutLead:"Jesteśmy jedną z najstarszych bilateralnych izb gospodarczych w Polsce. Reprezentujemy firmy członkowskie wobec administracji obu krajów i pomagamy im rozwijać się po obu stronach granicy.",
 missionT:"Misja",mission:"Być centrum wiedzy, wsparcia, inspiracji oraz wymiany doświadczeń i kontaktów, które służą rozwojowi polsko-ukraińskiej współpracy.",
 goalsT:"Jak działamy",goals:["Reprezentujemy ukraińskich inwestorów w Polsce i polskich w Ukrainie.","Wspieramy i promujemy działalność firm członkowskich.","Współpracujemy z polskimi, ukraińskimi i międzynarodowymi organizacjami biznesowymi.","Kształtujemy pozytywny wizerunek Polski w Ukrainie i Ukrainy w Polsce."],
@@ -133,7 +133,7 @@ contactPageLead:"Biuro główne w Warszawie, przedstawicielstwo w Kijowie i 24 p
 rbTitle:"Odbudowa Ukrainy",rbLead:"Przedsiębiorczość to dziś drugi front Ukrainy. Od września 2022 r. przekazujemy firmom i samorządom wiedzę o instrumentach międzynarodowej pomocy w odbudowie i modernizacji.",
 rbItems:[["Ukraine Facility","Wspieramy wdrażanie unijnego instrumentu Ukraine Facility — razem z BGK powołaliśmy Klub Ukraine Facility, platformę spotkań przedsiębiorców i samorządowców."],["Webinary i szkolenia","Regularne webinary o programach pomocowych UE i USA, zasadach przetargów i finansowania."],["Wizyty studyjne","Wspieramy podróże ukraińskich samorządowców do Polski — wymiana doświadczeń z transformacji."],["Konferencje","Baltic Business Forum w Świnoujściu, Kongres COMMON FUTURE z Grupą MTP w Poznaniu, Ukraine Recovery Conference w Gdańsku."]],
 rbCta:"Porozmawiajmy o projekcie odbudowy",pageNotice:"Treści na podstawie pol-ukr.com"},
-uk:{nAbout:"Про Палату",nRebuild:"Відбудова",nHome:"Головна",seeAll:"Дивитися всі →",allServices:"Усі послуги →",allEvents:"Увесь календар →",allNews:"Усі новини →",
+uk:{nMembersShort:"Члени",nAbout:"Про Палату",nRebuild:"Відбудова",nHome:"Головна",seeAll:"Дивитися всі →",allServices:"Усі послуги →",allEvents:"Увесь календар →",allNews:"Усі новини →",
 aboutTitle:"Міст між польським і українським бізнесом з 1992 року",aboutLead:"Ми — одна з найстаріших двосторонніх господарських палат у Польщі. Представляємо компанії-члени перед органами влади обох країн і допомагаємо їм розвиватися по обидва боки кордону.",
 missionT:"Місія",mission:"Бути центром знань, підтримки, натхнення та обміну досвідом і контактами для розвитку польсько-української співпраці.",
 goalsT:"Як ми працюємо",goals:["Представляємо українських інвесторів у Польщі та польських — в Україні.","Підтримуємо та просуваємо діяльність компаній-членів.","Співпрацюємо з польськими, українськими та міжнародними бізнес-організаціями.","Формуємо позитивний імідж Польщі в Україні та України в Польщі."],
@@ -148,7 +148,7 @@ contactPageLead:"Головний офіс у Варшаві, представн
 rbTitle:"Відбудова України",rbLead:"Підприємництво сьогодні — другий фронт України. З вересня 2022 р. ми передаємо компаніям і громадам знання про інструменти міжнародної допомоги у відбудові та модернізації.",
 rbItems:[["Ukraine Facility","Підтримуємо впровадження інструменту ЄС Ukraine Facility — разом з BGK створили Клуб Ukraine Facility, платформу зустрічей підприємців і громад."],["Вебінари та навчання","Регулярні вебінари про програми допомоги ЄС і США, правила тендерів і фінансування."],["Навчальні візити","Підтримуємо поїздки українських посадовців громад до Польщі — обмін досвідом трансформації."],["Конференції","Baltic Business Forum у Свіноуйсьці, Конгрес COMMON FUTURE з Grupa MTP у Познані, Ukraine Recovery Conference у Гданську."]],
 rbCta:"Обговорімо проєкт відбудови",pageNotice:"Контент на основі pol-ukr.com"},
-en:{nAbout:"About",nRebuild:"Recovery",nHome:"Home",seeAll:"See all →",allServices:"All services →",allEvents:"Full calendar →",allNews:"All news →",
+en:{nMembersShort:"Members",nAbout:"About",nRebuild:"Recovery",nHome:"Home",seeAll:"See all →",allServices:"All services →",allEvents:"Full calendar →",allNews:"All news →",
 aboutTitle:"Bridging Polish and Ukrainian business since 1992",aboutLead:"We are one of the oldest bilateral chambers of commerce in Poland. We represent member companies before the authorities of both countries and help them grow on both sides of the border.",
 missionT:"Mission",mission:"To be a hub of knowledge, support, inspiration and exchange of experience and contacts that drive Polish-Ukrainian cooperation.",
 goalsT:"What we do",goals:["Represent Ukrainian investors in Poland and Polish investors in Ukraine.","Support and promote member companies.","Cooperate with Polish, Ukrainian and international business organisations.","Build a positive image of Poland in Ukraine and of Ukraine in Poland."],
@@ -166,7 +166,7 @@ rbCta:"Let's talk about your recovery project",pageNotice:"Content based on pol-
 };
 for(const l in I18N_X)Object.assign(I18N[l],I18N_X[l]);
 
-const NAV=[["o-izbie.html","nAbout"],["uslugi.html","nServices"],["wydarzenia.html","nEvents"],["czlonkostwo.html","nMembership"],["czlonkowie.html","nMembers"],["aktualnosci.html","nNews"],["kontakt.html","nContact"]];
+const NAV=[["o-izbie.html","nAbout"],["uslugi.html","nServices"],["wydarzenia.html","nEvents"],["czlonkostwo.html","nMembership"],["czlonkowie.html","nMembersShort"],["aktualnosci.html","nNews"],["kontakt.html","nContact"]];
 const LEAD={
  pres:[["Jacek Piechota","presPL"],["Volodymyr Lytvyn","presUA"]],
  vp:[["Dariusz Szymczycha","firstVP"],["Sylwia Pusz"],["Vladyslav Ivanov"],["Viktoria Jalovenko"],["Piotr Ciarkowski"],["Viktor Kryvenko"]],
