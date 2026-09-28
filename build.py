@@ -60,7 +60,7 @@ PAGES = {
       <div class="eyebrow" data-i="heroEyebrow"></div>
       <h1 data-i-html="heroTitle"></h1>
       <p class="lead" data-i="heroLead"></p>
-      <div class="hero-ctas"><a href="kontakt.html" class="btn btn-gold" data-i="heroCta1"></a><a href="wydarzenia.html" class="btn btn-ghost" data-i="heroCta2"></a></div>
+      <div class="hero-ctas"><a href="kontakt.html" class="btn btn-cta" data-i="heroCta1"></a><a href="wydarzenia.html" class="btn btn-ghost" data-i="heroCta2"></a></div>
     </div>
     <div class="hero-card"><h3 data-i="nextEvents"></h3><div id="heroEvents"></div></div>
   </div>

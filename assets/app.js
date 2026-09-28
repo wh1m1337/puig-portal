@@ -17,7 +17,7 @@ function renderChrome(){
     <nav class="main" id="nav">${NAV.map(([h,k])=>`<a href="${h}"${location.pathname.endsWith("/"+h)?' aria-current="page"':""}>${T(k)}</a>`).join("")}</nav>
     <div class="langs" role="group" aria-label="Language">${["pl","uk","en"].map(l=>`<button data-lang="${l}" aria-pressed="${l===lang}">${l==="uk"?"UA":l.toUpperCase()}</button>`).join("")}</div>
     <button class="theme-btn" id="themeBtn" type="button"></button>
-    <a href="czlonkostwo.html" class="btn btn-gold">${T("ctaJoin")}</a></div></header>`;
+    <a href="czlonkostwo.html" class="btn btn-cta">${T("ctaJoin")}</a></div></header>`;
   $("#ftr").innerHTML=`<footer><div class="wrap"><div class="foot">
     <div><a class="logo" href="index.html">${LOGO}<span>PUIG<small>${T("orgName")}</small></span></a><p style="font-size:14px;margin-top:14px">${T("footAbout")}</p></div>
     <div><h4>${T("fIzba")}</h4><a href="o-izbie.html">${T("fAbout")}</a><a href="o-izbie.html#kierownictwo">${T("fBoard")}</a><a href="czlonkostwo.html">${T("nMembership")}</a><a href="czlonkowie.html">${T("nMembers")}</a></div>
