@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PUIG · Polsko-Ukraińska Izba Gospodarcza</title>
+<meta name="description" content="Kontakt z PUIG: biuro w Warszawie, przedstawicielstwo w Kijowie i sieć przedstawicieli regionalnych.">
+<script>try{var t=localStorage.getItem("puig-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="kontakt" data-title="nContact">
+<div id="hdr"></div>
+<main id="top">
+<section class="page-hero"><div class="wrap">
+  <div class="crumbs"><a href="index.html" data-i="nHome">Strona główna</a> / <span data-i="nContact"></span></div>
+  <h1 data-i="ctTitle"></h1>
+  <p data-i="contactPageLead"></p>
+</div></section>
+
+<section><div class="wrap"><div class="contact-grid"><form class="card" id="ctForm">
+  <label><span data-i="fName"></span><input name="name" required autocomplete="name"></label>
+  <label><span data-i="fMail"></span><input name="email" type="email" required autocomplete="email"></label>
+  <label><span data-i="fDept"></span><select name="dept" id="deptSel"></select></label>
+  <label><span data-i="fMsg"></span><textarea name="msg" required></textarea></label>
+  <button class="btn btn-blue" type="submit" data-i="fSend"></button>
+</form>
+  <div style="display:grid;gap:20px">
+    <div class="card prose"><h3 data-i="hq"></h3><p>ul. Legionowa 9/2, 01-343 Warszawa<br><a href="tel:+48228270081">+48 22 827 00 81</a><br><a href="mailto:info@pol-ukr.com">info@pol-ukr.com</a></p>
+      <h3 style="margin-top:20px" data-i="kyiv"></h3><p>вул. Хорива 4/10, 04071 Київ<br><a href="tel:+380504105926">+380 50 410 59 26</a></p></div>
+    <div class="card cause"><h3 data-i="fundTitle"></h3><p data-i="fundLead"></p><a class="btn btn-gold" href="https://pol-ukr.com/fundusz-pomocy-ukrainie/" data-i="fundCta"></a></div>
+  </div>
+</div></div></section>
+<section id="biura" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow" data-i="offEyebrow"></div><h2 data-i="offTitle"></h2></div><div class="chips" id="offFilter" style="margin:0"></div></div>
+  <div class="off-wrap"><div class="card off-list" id="offList" role="listbox"></div><div class="card off-detail" id="offDetail" aria-live="polite"></div></div>
+</div></section>
+</main>
+<div id="ftr"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

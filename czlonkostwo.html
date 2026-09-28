@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PUIG · Polsko-Ukraińska Izba Gospodarcza</title>
+<meta name="description" content="Pakiety członkowskie PUIG i składki według Uchwały nr 2/2026.">
+<script>try{var t=localStorage.getItem("puig-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="czlonkostwo" data-title="nMembership">
+<div id="hdr"></div>
+<main id="top">
+<section class="page-hero"><div class="wrap">
+  <div class="crumbs"><a href="index.html" data-i="nHome">Strona główna</a> / <span data-i="nMembership"></span></div>
+  <h1 data-i="memTitle"></h1>
+  <p data-i="memPageLead"></p>
+</div></section>
+
+<section><div class="wrap"><p style="color:var(--muted);margin:0 0 28px" data-i="memLead"></p><div class="mem-grid" id="memGrid"></div><div class="steps" id="steps"></div></div></section>
+<section style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap two-col">
+  <div class="card prose"><h3 data-i="importantT"></h3><ul data-i-list="important"></ul></div>
+  <div class="band" style="flex-direction:column;align-items:flex-start"><div><h3 data-i="nMembers"></h3><p data-i="dirLead"></p></div><a class="btn btn-blue" href="czlonkowie.html" data-i="seeAll"></a></div>
+</div></section>
+</main>
+<div id="ftr"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

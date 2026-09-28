@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PUIG · Polsko-Ukraińska Izba Gospodarcza</title>
+<meta name="description" content="Doradztwo, legalizacja, misje gospodarcze, tłumaczenia, promocja i eventy — usługi PUIG z cenami.">
+<script>try{var t=localStorage.getItem("puig-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="uslugi" data-title="nServices">
+<div id="hdr"></div>
+<main id="top">
+<section class="page-hero"><div class="wrap">
+  <div class="crumbs"><a href="index.html" data-i="nHome">Strona główna</a> / <span data-i="nServices"></span></div>
+  <h1 data-i="svcTitle"></h1>
+  <p data-i="svcPageLead"></p>
+</div></section>
+
+<section><div class="wrap"><div class="svc-grid" id="svcGrid"></div></div></section>
+<section style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap"><div class="sec-head"><div><h2 data-i="howT"></h2></div></div><div class="steps" id="howSteps" style="margin-top:0"></div></div></section>
+<section><div class="wrap"><div class="sec-head"><div><h2 data-i="ctTitle"></h2><p data-i="ctLead"></p></div></div><div class="contact-grid"><form class="card" id="ctForm">
+  <label><span data-i="fName"></span><input name="name" required autocomplete="name"></label>
+  <label><span data-i="fMail"></span><input name="email" type="email" required autocomplete="email"></label>
+  <label><span data-i="fDept"></span><select name="dept" id="deptSel"></select></label>
+  <label><span data-i="fMsg"></span><textarea name="msg" required></textarea></label>
+  <button class="btn btn-blue" type="submit" data-i="fSend"></button>
+</form><div class="card prose"><h3 data-i="hq"></h3><p>ul. Legionowa 9/2, 01-343 Warszawa<br><a href="tel:+48228270081">+48 22 827 00 81</a><br><a href="mailto:info@pol-ukr.com">info@pol-ukr.com</a></p></div></div></div></section>
+</main>
+<div id="ftr"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

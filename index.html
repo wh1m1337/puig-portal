@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PUIG · Polsko-Ukraińska Izba Gospodarcza</title>
+<meta name="description" content="Polsko-Ukraińska Izba Gospodarcza — od 1992 roku wspieramy firmy wchodzące na rynek polski i ukraiński.">
+<script>try{var t=localStorage.getItem("puig-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="index">
+<div id="hdr"></div>
+<main id="top">
+
+<section class="hero"><div class="wrap">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow" style="color:var(--gold)" data-i="heroEyebrow"></div>
+      <h1 data-i-html="heroTitle"></h1>
+      <p class="lead" data-i="heroLead"></p>
+      <div class="hero-ctas"><a href="kontakt.html" class="btn btn-gold" data-i="heroCta1"></a><a href="wydarzenia.html" class="btn btn-ghost" data-i="heroCta2"></a></div>
+    </div>
+    <div class="hero-card"><h3 data-i="nextEvents"></h3><div id="heroEvents"></div></div>
+  </div>
+  <div class="paths" id="paths"></div>
+</div></section>
+<section class="stats"><div class="wrap stat-row">
+  <div class="card stat"><b>1992</b><span data-i="st1"></span></div>
+  <div class="card stat"><b>26</b><span data-i="st2"></span></div>
+  <div class="card stat"><b>§</b><span data-i="st3"></span></div>
+  <div class="card stat"><b id="evCount">7</b><span data-i="st4"></span></div>
+</div></section>
+<section><div class="wrap"><div class="sec-head"><div><div class="eyebrow" data-i="nServices"></div><h2 data-i="svcTitle"></h2></div><a class="more-link" href="uslugi.html" data-i="allServices"></a></div><div class="svc-grid" id="svcGrid" data-limit="6"></div></div></section>
+<section style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap"><div class="sec-head"><div><div class="eyebrow" data-i="nEvents"></div><h2 data-i="evTitle"></h2></div><a class="more-link" href="wydarzenia.html" data-i="allEvents"></a></div><div class="ev-list" id="evList" data-limit="3"></div></div></section>
+<section><div class="wrap"><div class="sec-head"><div><div class="eyebrow" data-i="nNews"></div><h2 data-i="newsTitle"></h2></div><a class="more-link" href="aktualnosci.html" data-i="allNews"></a></div><div class="news-grid" id="newsGrid" data-limit="3"></div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="band"><div><h3 data-i="memTitle"></h3><p data-i="memPageLead"></p></div><a class="btn btn-blue" href="czlonkostwo.html" data-i="ctaJoin"></a></div></div></section>
+</main>
+<div id="ftr"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PUIG · Polsko-Ukraińska Izba Gospodarcza</title>
+<meta name="description" content="Misja, cele i kierownictwo Polsko-Ukraińskiej Izby Gospodarczej.">
+<script>try{var t=localStorage.getItem("puig-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="o-izbie" data-title="nAbout">
+<div id="hdr"></div>
+<main id="top">
+<section class="page-hero"><div class="wrap">
+  <div class="crumbs"><a href="index.html" data-i="nHome">Strona główna</a> / <span data-i="nAbout"></span></div>
+  <h1 data-i="aboutTitle"></h1>
+  <p data-i="aboutLead"></p>
+</div></section>
+
+<section><div class="wrap two-col">
+  <div class="card prose"><h3 data-i="missionT"></h3><p data-i="mission"></p></div>
+  <div class="card prose"><h3 data-i="goalsT"></h3><ul data-i-list="goals"></ul></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap"><div class="band"><div><h3 data-i="commissionT"></h3><p data-i="commission"></p></div><a class="btn btn-blue" href="mailto:info@pol-ukr.com?subject=Komisja%20mi%C4%99dzyrz%C4%85dowa" data-i="commissionCta"></a></div></div></section>
+<section id="kierownictwo" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow" data-i="nAbout"></div><h2 data-i="leadT"></h2></div></div>
+  <div id="people"></div>
+</div></section>
+<section><div class="wrap">
+  <div class="sec-head"><div><h2 data-i="docsT"></h2></div></div>
+  <div class="docs">
+    <a class="btn btn-line" href="https://pol-ukr.com/informacje-o-izbie/" data-i="docStatute"></a>
+    <a class="btn btn-line" href="https://pol-ukr.com/informacje-o-izbie/" data-i="docReport"></a>
+    <a class="btn btn-line" href="https://pol-ukr.com/wp-content/uploads/2024-12-06-PUIG-PREZENTACJA.pdf" data-i="docPres"></a>
+  </div>
+</div></section>
+</main>
+<div id="ftr"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
